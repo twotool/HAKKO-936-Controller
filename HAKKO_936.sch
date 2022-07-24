@@ -1,0 +1,520 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Operational:LM358 U1
+U 1 1 618B7A98
+P 3750 3500
+F 0 "U1" H 3750 3867 50  0000 C CNN
+F 1 "LM358" H 3750 3776 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 3750 3500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 3750 3500 50  0001 C CNN
+	1    3750 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM358 U1
+U 2 1 618B9483
+P 5500 3600
+F 0 "U1" H 5500 3967 50  0000 C CNN
+F 1 "LM358" H 5500 3876 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 5500 3600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 5500 3600 50  0001 C CNN
+	2    5500 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:LM358 U1
+U 3 1 618BBE42
+P 7800 3550
+F 0 "U1" H 7758 3596 50  0000 L CNN
+F 1 "LM358" H 7758 3505 50  0000 L CNN
+F 2 "Package_DIP:DIP-8_W7.62mm_LongPads" H 7800 3550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf" H 7800 3550 50  0001 C CNN
+	3    7800 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 618BE48C
+P 3000 3000
+F 0 "R1" V 2793 3000 50  0000 C CNN
+F 1 "1K" V 2884 3000 50  0000 C CNN
+F 2 "22L:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2930 3000 50  0001 C CNN
+F 3 "~" H 3000 3000 50  0001 C CNN
+	1    3000 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 618BEB58
+P 3300 3750
+F 0 "C1" H 3415 3796 50  0000 L CNN
+F 1 "100n" H 3415 3705 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 3338 3600 50  0001 C CNN
+F 3 "~" H 3300 3750 50  0001 C CNN
+	1    3300 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:IRF3205 Q1
+U 1 1 618BFBA6
+P 6750 3600
+F 0 "Q1" H 6955 3646 50  0000 L CNN
+F 1 "IRF3205" H 6955 3555 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7000 3525 50  0001 L CIN
+F 3 "http://www.irf.com/product-info/datasheets/data/irf3205.pdf" H 6750 3600 50  0001 L CNN
+	1    6750 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Zener D1
+U 1 1 618C1141
+P 3300 4650
+F 0 "D1" V 3254 4730 50  0000 L CNN
+F 1 "5.1V" V 3345 4730 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 3300 4650 50  0001 C CNN
+F 3 "~" H 3300 4650 50  0001 C CNN
+	1    3300 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT RV1
+U 1 1 618C1BC1
+P 3650 4400
+F 0 "RV1" V 3535 4400 50  0000 C CNN
+F 1 "10K" V 3444 4400 50  0000 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3386C_Horizontal" H 3650 4400 50  0001 C CNN
+F 3 "~" H 3650 4400 50  0001 C CNN
+	1    3650 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 618C2828
+P 6850 3100
+F 0 "D2" V 6889 2982 50  0000 R CNN
+F 1 "LED" V 6798 2982 50  0000 R CNN
+F 2 "LED_THT:LED_D5.0mm" H 6850 3100 50  0001 C CNN
+F 3 "~" H 6850 3100 50  0001 C CNN
+	1    6850 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:DIN-5 J1
+U 1 1 618C380D
+P 6650 4900
+F 0 "J1" H 6650 4625 50  0000 C CNN
+F 1 "DIN-5" H 6650 4534 50  0000 C CNN
+F 2 "22L:DIN_5_Inline" H 6650 4900 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 6650 4900 50  0001 C CNN
+	1    6650 4900
+	1    0    0    -1  
+$EndComp
+Text Label 6950 4800 0    50   ~ 0
+Thermocouple-
+Text Label 6950 5000 0    50   ~ 0
+Thermocouple+
+Text Label 6350 5000 2    50   ~ 0
+Heater-
+Text Label 6350 4800 2    50   ~ 0
+Heater+
+Text Label 6650 4600 0    50   ~ 0
+GND
+$Comp
+L Device:R R2
+U 1 1 618C5621
+P 3000 3600
+F 0 "R2" V 2793 3600 50  0000 C CNN
+F 1 "2.2K" V 2884 3600 50  0000 C CNN
+F 2 "22L:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2930 3600 50  0001 C CNN
+F 3 "~" H 3000 3600 50  0001 C CNN
+	1    3000 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 618C80D0
+P 3000 4400
+F 0 "R3" V 2793 4400 50  0000 C CNN
+F 1 "2.2K" V 2884 4400 50  0000 C CNN
+F 2 "22L:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2930 4400 50  0001 C CNN
+F 3 "~" H 3000 4400 50  0001 C CNN
+	1    3000 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R8
+U 1 1 618CA6F2
+P 6150 3600
+F 0 "R8" V 5943 3600 50  0000 C CNN
+F 1 "47R" V 6034 3600 50  0000 C CNN
+F 2 "22L:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6080 3600 50  0001 C CNN
+F 3 "~" H 6150 3600 50  0001 C CNN
+	1    6150 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 618CCF24
+P 4750 3500
+F 0 "R5" V 4543 3500 50  0000 C CNN
+F 1 "47K" V 4634 3500 50  0000 C CNN
+F 2 "22L:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4680 3500 50  0001 C CNN
+F 3 "~" H 4750 3500 50  0001 C CNN
+	1    4750 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 618CDD5E
+P 4750 3800
+F 0 "R6" V 4543 3800 50  0000 C CNN
+F 1 "100K" V 4634 3800 50  0000 C CNN
+F 2 "22L:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4680 3800 50  0001 C CNN
+F 3 "~" H 4750 3800 50  0001 C CNN
+	1    4750 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R7
+U 1 1 618CE557
+P 5050 4100
+F 0 "R7" H 4980 4054 50  0000 R CNN
+F 1 "100K" H 4980 4145 50  0000 R CNN
+F 2 "22L:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 4980 4100 50  0001 C CNN
+F 3 "~" H 5050 4100 50  0001 C CNN
+	1    5050 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:CP C2
+U 1 1 618D34C9
+P 8500 3550
+F 0 "C2" H 8618 3596 50  0000 L CNN
+F 1 "100uF 25v" H 8618 3505 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D8.0mm_P3.80mm" H 8538 3400 50  0001 C CNN
+F 3 "~" H 8500 3550 50  0001 C CNN
+	1    8500 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Zener D3
+U 1 1 618D42E2
+P 8100 3550
+F 0 "D3" V 8054 3630 50  0000 L CNN
+F 1 "12V" V 8145 3630 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 8100 3550 50  0001 C CNN
+F 3 "~" H 8100 3550 50  0001 C CNN
+	1    8100 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 618D5195
+P 3700 3000
+F 0 "R4" V 3493 3000 50  0000 C CNN
+F 1 "100K" V 3584 3000 50  0000 C CNN
+F 2 "22L:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 3630 3000 50  0001 C CNN
+F 3 "~" H 3700 3000 50  0001 C CNN
+	1    3700 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_POT RV2
+U 1 1 618D6159
+P 4100 4400
+F 0 "RV2" V 3985 4400 50  0000 C CNN
+F 1 "5K" V 3894 4400 50  0000 C CNN
+F 2 "22L:Big_POT" H 4100 4400 50  0001 C CNN
+F 3 "~" H 4100 4400 50  0001 C CNN
+	1    4100 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R9
+U 1 1 618D6D4A
+P 6850 2650
+F 0 "R9" H 6780 2604 50  0000 R CNN
+F 1 "4.7K" H 6780 2695 50  0000 R CNN
+F 2 "22L:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6780 2650 50  0001 C CNN
+F 3 "~" H 6850 2650 50  0001 C CNN
+	1    6850 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 618DCFB3
+P 7700 2900
+F 0 "R10" H 7630 2854 50  0000 R CNN
+F 1 "330R 1W" H 7630 2945 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 7630 2900 50  0001 C CNN
+F 3 "~" H 7700 2900 50  0001 C CNN
+	1    7700 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GNDPWR #PWR07
+U 1 1 618EDE5E
+P 6850 3950
+F 0 "#PWR07" H 6850 3750 50  0001 C CNN
+F 1 "GNDPWR" H 6854 3796 50  0000 C CNN
+F 2 "" H 6850 3900 50  0001 C CNN
+F 3 "" H 6850 3900 50  0001 C CNN
+	1    6850 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR08
+U 1 1 618FD44E
+P 7700 4050
+F 0 "#PWR08" H 7700 3850 50  0001 C CNN
+F 1 "GNDPWR" H 7704 3896 50  0000 C CNN
+F 2 "" H 7700 4000 50  0001 C CNN
+F 3 "" H 7700 4000 50  0001 C CNN
+	1    7700 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+VDC #PWR06
+U 1 1 618FE6C6
+P 6850 2300
+F 0 "#PWR06" H 6850 2200 50  0001 C CNN
+F 1 "+VDC" H 6850 2575 50  0000 C CNN
+F 2 "" H 6850 2300 50  0001 C CNN
+F 3 "" H 6850 2300 50  0001 C CNN
+	1    6850 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6850 2300 6850 2400
+Wire Wire Line
+	6850 2400 7700 2400
+Wire Wire Line
+	7700 2400 7700 2750
+Connection ~ 6850 2400
+Wire Wire Line
+	6850 2400 6850 2500
+Wire Wire Line
+	7700 3050 7700 3150
+Wire Wire Line
+	7700 3850 7700 3950
+Wire Wire Line
+	7700 3150 8100 3150
+Wire Wire Line
+	8100 3150 8100 3400
+Connection ~ 7700 3150
+Wire Wire Line
+	7700 3150 7700 3250
+Wire Wire Line
+	8100 3150 8500 3150
+Wire Wire Line
+	8500 3150 8500 3400
+Connection ~ 8100 3150
+Wire Wire Line
+	7700 3950 8100 3950
+Wire Wire Line
+	8500 3950 8500 3700
+Connection ~ 7700 3950
+Wire Wire Line
+	7700 3950 7700 4050
+Wire Wire Line
+	8100 3700 8100 3950
+Connection ~ 8100 3950
+Wire Wire Line
+	8100 3950 8500 3950
+Wire Wire Line
+	6850 2800 6850 2950
+Wire Wire Line
+	6850 3250 6850 3400
+Wire Wire Line
+	6850 3800 6850 3950
+Wire Wire Line
+	6300 3600 6550 3600
+Wire Wire Line
+	5800 3600 6000 3600
+$Comp
+L power:GNDPWR #PWR03
+U 1 1 61905DE5
+P 3300 4950
+F 0 "#PWR03" H 3300 4750 50  0001 C CNN
+F 1 "GNDPWR" H 3304 4796 50  0000 C CNN
+F 2 "" H 3300 4900 50  0001 C CNN
+F 3 "" H 3300 4900 50  0001 C CNN
+	1    3300 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDPWR #PWR04
+U 1 1 619068DF
+P 4450 4600
+F 0 "#PWR04" H 4450 4400 50  0001 C CNN
+F 1 "GNDPWR" H 4454 4446 50  0000 C CNN
+F 2 "" H 4450 4550 50  0001 C CNN
+F 3 "" H 4450 4550 50  0001 C CNN
+	1    4450 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 4400 3300 4400
+Wire Wire Line
+	3300 4400 3300 4500
+Wire Wire Line
+	3300 4400 3500 4400
+Connection ~ 3300 4400
+Wire Wire Line
+	3800 4400 3900 4400
+Wire Wire Line
+	4250 4400 4450 4400
+Wire Wire Line
+	4450 4400 4450 4600
+Wire Wire Line
+	3300 4800 3300 4950
+Wire Wire Line
+	4050 3500 4200 3500
+Wire Wire Line
+	4900 3500 5200 3500
+Wire Wire Line
+	5200 3700 5050 3700
+Wire Wire Line
+	5050 3700 5050 3800
+Wire Wire Line
+	4900 3800 5050 3800
+Connection ~ 5050 3800
+Wire Wire Line
+	5050 3800 5050 3950
+Wire Wire Line
+	4600 3800 4100 3800
+Wire Wire Line
+	4100 3800 4100 4250
+Wire Wire Line
+	3150 3600 3300 3600
+Wire Wire Line
+	3450 3600 3300 3600
+Connection ~ 3300 3600
+Wire Wire Line
+	3150 3000 3300 3000
+Wire Wire Line
+	3850 3000 4200 3000
+Wire Wire Line
+	4200 3000 4200 3500
+Connection ~ 4200 3500
+Wire Wire Line
+	4200 3500 4600 3500
+Wire Wire Line
+	3450 3400 3300 3400
+Wire Wire Line
+	3300 3400 3300 3000
+Connection ~ 3300 3000
+Wire Wire Line
+	3300 3000 3550 3000
+$Comp
+L power:GNDPWR #PWR01
+U 1 1 61910921
+P 2750 3150
+F 0 "#PWR01" H 2750 2950 50  0001 C CNN
+F 1 "GNDPWR" H 2754 2996 50  0000 C CNN
+F 2 "" H 2750 3100 50  0001 C CNN
+F 3 "" H 2750 3100 50  0001 C CNN
+	1    2750 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 3150 2750 3000
+Wire Wire Line
+	2750 3000 2850 3000
+$Comp
+L power:GNDPWR #PWR02
+U 1 1 6191205B
+P 3300 4000
+F 0 "#PWR02" H 3300 3800 50  0001 C CNN
+F 1 "GNDPWR" H 3304 3846 50  0000 C CNN
+F 2 "" H 3300 3950 50  0001 C CNN
+F 3 "" H 3300 3950 50  0001 C CNN
+	1    3300 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 4000 3300 3950
+Text Label 2850 3600 2    50   ~ 0
+Thermocouple+
+Text Label 2850 3950 2    50   ~ 0
+Thermocouple-
+Wire Wire Line
+	2850 3950 3300 3950
+Connection ~ 3300 3950
+Wire Wire Line
+	3300 3950 3300 3900
+Text Label 2850 4400 2    50   ~ 0
+20V
+Text Label 7300 2400 2    50   ~ 0
+20V
+Text Label 6850 2400 2    50   ~ 0
+Heater+
+Text Label 6850 3350 2    50   ~ 0
+Heater-
+Text Label 8500 3950 0    50   ~ 0
+GND
+$Comp
+L power:GNDPWR #PWR05
+U 1 1 6192CD26
+P 5050 4400
+F 0 "#PWR05" H 5050 4200 50  0001 C CNN
+F 1 "GNDPWR" H 5054 4246 50  0000 C CNN
+F 2 "" H 5050 4350 50  0001 C CNN
+F 3 "" H 5050 4350 50  0001 C CNN
+	1    5050 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 4400 5050 4250
+Wire Wire Line
+	3650 4250 3650 4200
+Wire Wire Line
+	3650 4200 3900 4200
+Wire Wire Line
+	3900 4200 3900 4400
+Connection ~ 3900 4400
+Wire Wire Line
+	3900 4400 3950 4400
+$Comp
+L Connector:Conn_01x02_Male J2
+U 1 1 61947893
+P 8300 2600
+F 0 "J2" H 8408 2689 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 8408 2690 50  0001 C CNN
+F 2 "22L:LINE CN" H 8300 2600 50  0001 C CNN
+F 3 "~" H 8300 2600 50  0001 C CNN
+	1    8300 2600
+	1    0    0    -1  
+$EndComp
+Text Label 8500 2600 0    50   ~ 0
+20V
+Text Label 8500 2700 0    50   ~ 0
+GND
+$Comp
+L Mechanical:Heatsink_Pad HS1
+U 1 1 618C020E
+P 6000 4000
+F 0 "HS1" H 6141 4039 50  0000 L CNN
+F 1 "Heatsink_Pad" H 6141 3948 50  0000 L CNN
+F 2 "digikey-footprints:Heatsink_14x9mm_1xDrill1.5mm" H 6012 3950 50  0001 C CNN
+F 3 "~" H 6012 3950 50  0001 C CNN
+	1    6000 4000
+	1    0    0    -1  
+$EndComp
+Text Label 6000 4100 2    50   ~ 0
+Heater-
+$EndSCHEMATC
